@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu123-Boarding Schools</title>
+    <link rel="stylesheet" href="Edu.css">
+    <link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <h1>Edu123 - Boarding Schools in Mussoorie</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#schools">Schools</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search-section">
+            <input type="text" id="search" placeholder="Search for schools..." oninput="autocomplete()">
+            <div id="suggestions" class="suggestions"></div>
+        </section>
+
+        <section class="container" id="schools">
+            <div class="card">
+                <h2>Spring Hill School</h2>
+                <img src="https://www.bil.com.br/blog/wp-content/uploads/2020/03/original-9ce2865240746a5dcf82df0f1c9fdde4.jpeg" alt="School A" loading="lazy">
+                <p>Rating: ★★★★☆</p>
+                <p>This school has excellent facilities and great teachers.</p>
+            </div>
+            <div class="card">
+                <h2>Annamacharya Public School</h2>
+                <img src="https://teaching.blog.gov.uk/wp-content/uploads/sites/170/2016/10/Primary-School-Teacher-istock.jpg" alt="School B" loading="lazy">
+                <p>Rating: ★★★☆☆</p>
+                <p>A reputable school known for its academics.</p>
+            </div>
+            <div class="card">
+                <h2>The Yellow School</h2>
+                <img src="https://cdn.zeebiz.com/sites/default/files/2023/06/01/245430-kerala-school-opening-date-2023.jpg" alt="School C" loading="lazy">
+                <p>Rating: ★★★★★</p>
+                <p>Highly recommended for its holistic approach.</p>
+            </div>
+        </section>
+
+        <section id="map">
+            <h2>Our Location</h2>
+            <div id="googleMap" style="width:100%;height:400px;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Edu123. All rights reserved.</p>
+    </footer>
+
+    <script src="Edu.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDq-Cg5GJ7UqKu6pVqHoAe1wL9BGjhSwT4&callback=initMap" async defer></script>
+</body>
+</html>
